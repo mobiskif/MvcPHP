@@ -1,0 +1,92 @@
+@CHARSET "UTF-8";
+body {
+	width: 68%;
+	margin: auto;
+	padding-left: 1em;
+}
+main {
+	width: 62%;
+	float: left;
+}
+footer {
+	width: 32%;
+	float: right;
+}
+.inline {
+	clear: both;
+}
+#O td {
+	border: 1px dotted orange;
+}
+.inline li {
+	display: inline;
+	margin-right: .5em;
+}
+
+.inline ul {
+	padding: 0;
+}
+
+/*
+html {
+	background-image: url(../img/globe.gif);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment:fixed;
+}
+
+body {
+	background-color: transparent;
+	padding-left: .5em;
+	padding-right: .5em;
+	width: 68%;
+	margin: auto;
+	font-size: large;
+	font-family: Georgia, "Tiimes New Roman", Times, serif;
+	line-height: normal;
+}
+
+
+p {
+	text-indent: .68em;
+}
+
+h1, h2 {
+	font-weight: normal;
+	font-family: "Tiimes New Roman"
+}
+
+h1 a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1 a:HOVER {
+	text-decoration: underline;
+}
+
+header h1 {
+	font-weight: bold;
+}
+
+.hover:HOVER {
+	background-color: #fff;
+}
+/**/
+
+
+@media screen and (max-width: 800px) {
+	body {
+		width: 97%;
+		margin: 0;
+	}
+	main {
+		width: 100%;
+		float: none;
+	}
+	footer {
+		width: 100%;
+		float: none;
+	}
+}
+

@@ -1,0 +1,38 @@
+<section>
+   <h1>Filesystem Security</h1>
+
+   <p class="simpara">
+    <acronym title="PHP: Hypertext Preprocessor">PHP</acronym> is subject to the security built into most server systems with
+    respect to permissions on a file and directory basis. This allows
+    you to control which files in the filesystem may be read. Care
+    should be taken with any files which are world readable to ensure
+    that they are safe for reading by all users who have access to that
+    filesystem.
+   </p>
+ 
+   <p class="simpara">
+    Consider the following script, where a user indicates that they&#039;d
+    like to delete a file in their home directory. This assumes a
+    situation where a <acronym title="PHP: Hypertext Preprocessor">PHP</acronym> web interface is regularly used for file
+    management, so the Apache user is allowed to delete files in
+    the user home directories.
+   </p>
+      <p class="para">
+    <div class="example" id="example-373">
+     <p><strong>Example #1 Poor variable checking leads to....</strong></p>
+     <div class="example-contents">
+<div class="phpcode"><code><span style="color: #000000">
+<span style="color: #0000BB">&lt;?php<br /></span><span style="color: #FF8000">//&nbsp;remove&nbsp;a&nbsp;file&nbsp;from&nbsp;the&nbsp;user's&nbsp;home&nbsp;directory<br /></span><span style="color: #0000BB">$username&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #DD0000">'user_submitted_name'</span><span style="color: #007700">];<br /></span><span style="color: #0000BB">$userfile&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #DD0000">'user_submitted_filename'</span><span style="color: #007700">];<br /></span><span style="color: #0000BB">$homedir&nbsp;&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"/home/</span><span style="color: #0000BB">$username</span><span style="color: #DD0000">"</span><span style="color: #007700">;<br /><br /></span><span style="color: #0000BB">unlink</span><span style="color: #007700">(</span><span style="color: #DD0000">"</span><span style="color: #0000BB">$homedir</span><span style="color: #DD0000">/</span><span style="color: #0000BB">$userfile</span><span style="color: #DD0000">"</span><span style="color: #007700">);<br /><br />echo&nbsp;</span><span style="color: #DD0000">"The&nbsp;file&nbsp;has&nbsp;been&nbsp;deleted!"</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">?&gt;</span>
+</span>
+</code></div>
+     </div>
+
+    </div>
+   Since the username and the filename are postable from a user form, 
+   they can submit a username and a filename belonging to someone else, 
+   and delete it even if they&#039;re not supposed to be allowed to do so.
+   In this case, you&#039;d want to use some other form of authentication.
+   Consider what could happen if the variables submitted were
+   &quot;../etc/&quot; and &quot;passwd&quot;. The code would then effectively read   
+   </p>
+  </section>
