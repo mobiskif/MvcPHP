@@ -1,51 +1,62 @@
 <section>
-   <h1>General considerations</h1>
+<h3><?php echo $this->arg->value; ?></h3> 
+<pre>
+THERE IS NO COFFEE                   НЕТ КОФЕ,
+BUT                                  НО
+THERE IS TEA                         ЕСТЬ ЧАЙ
 
-   <p class="simpara">
-    A completely secure system is a virtual impossibility, so an
-    approach often used in the security profession is one of balancing
-    risk and usability. If every variable submitted by a user required
-    two forms of biometric validation (such as a retinal scan and a
-    fingerprint), you would have an extremely high level of
-    accountability. It would also take half an hour to fill out a fairly
-    complex form, which would tend to encourage users to find ways of
-    bypassing the security.
-   </p>
-   <p class="simpara">
-    The best security is often unobtrusive enough to suit the
-    requirements without the user being prevented from accomplishing
-    their work, or over-burdening the code author with excessive
-    complexity. Indeed, some security attacks are merely exploits of
-    this kind of overly built security, which tends to erode over time.
-   </p>
-   <p class="simpara">
-    A phrase worth remembering: A system is only as good as the weakest
-    link in a chain. If all transactions are heavily logged based on
-    time, location, transaction type, etc. but the user is only
-    verified based on a single cookie, the validity of tying the users
-    to the transaction log is severely weakened.
-   </p>
-   <p class="simpara">
-    When testing, keep in mind that you will not be able to test all
-    possibilities for even the simplest of pages. The input you
-    may expect will be completely unrelated to the input given by
-    a disgruntled employee, a cracker with months of time on their
-    hands, or a housecat walking across the keyboard. This is why it&#039;s
-    best to look at the code from a logical perspective, to discern
-    where unexpected data can be introduced, and then follow how it is
-    modified, reduced, or amplified.
-   </p>
-   <p class="simpara">
-    The Internet is filled with people trying to make a name for
-    themselves by breaking your code, crashing your site, posting
-    inappropriate content, and otherwise making your day interesting.
-    It doesn&#039;t matter if you have a small or large site, you are
-    a target by simply being online, by having a server that can be
-    connected to. Many cracking programs do not discern by size, they
-    simply trawl massive IP blocks looking for victims. Try not to
-    become one.
-   </p>
- </section>
+1. There is tea.                     1. Есть чай.
+2. What?                             2. Что?
+3. Tea.                              3. Чай.
+4. What is there?                    4. Что есть?
+5. There is tea.                     5. Есть чай.
+6. Coffee too?                       6. Кофе тоже?
+7. No.                               7. Нет.
+8. No coffee.                        8. Нет кофе.
+9. Only tea.                         9. Только чай.
+
+
+LOOK THERE!                          ПОСМОТРИТЕ ТУДА!
+It IS BEAUTIFUL                      ЭТО - КРАСИВО
+
+1. Look!                             1. Смотрите!
+2. Where?                            2. Куда?
+3. There.                            3. Туда.
+4. Do you see?                       4. Вы видите?
+5. Yes, I see.                       5. Да, я вижу.
+6. I do.                             6. Я делаю.
+7. Of course, I do.                  7. Конечно, я делаю.
+
+
+JANE WHO IS IN THE SIXTH GRADE,      ДЖЕЙН, КОТОРАЯ В ШЕСТОМ КЛАССЕ,
+IS TWELVE.                           ДВЕНАДЦАТЬ ЛЕТ.
+
+1. HOW OLD IS MIKE?                  1. СКОЛЬКО ЛЕТ МАЙКУ?
+2. HE IS ELEVEN.                     2. ЕМУ ОДИННАДЦАТЬ.
+3. WHAT ABOUT JANE?                  3. ЧТО НАСЧЕТ ДЖЕЙН?
+4. HOW OLD IS SHE?                   4. СКОЛЬКО ЕЙ ЛЕТ?
+5. SHE IS TWELVE.                    5. ЕЙ ДВЕНАДЦАТЬ.
+6. WHERE ARE THEY?                   6. ГДЕ ОНИ?
+7. THEY ARE AT SCHOOL.               7. ОНИ - В ШКОЛЕ.
+8. WHAT GRADE?                       8. КАКОЙ КЛАСС?
+9. MIKE IS IN THE FIFTH.             9. МАЙК В ПЯТОМ.
+10.AND JANE IS IN THE SIXTH.        10. А ДЖЕЙН - В ШЕСТОМ.
+
+
+It IS FAR,                           ЭТО - ДАЛЕКО,
+BUT                                  НО
+It IS GOOD.                          ОНО - ХОРОШЕЕ.
+
+1. BRING It.                         1. ПРИНЕСИТЕ ЭТО.
+2. THERE IS NOT ANY  HERE.           2. НЕТ НИКАКОГО ЗДЕСЬ.
+3. I WANT TO HAVE It.                3. Я ХОЧУ ИМЕТЬ ЭТО.
+4. It IS FAR,                        4. ЭТО - ДАЛЕКО,
+   BUT                                  НО
+5. I WANT TO HAVE It HERE            5. Я ХОЧУ ИМЕТЬ ЭТО ЗДЕСЬ,
+   BECAUSE                              ПОТОМУ ЧТО
+6. It IS GOOD.                       6. ОНО - ХОРОШЕЕ.
+</pre>
+</section>
  <!--  
 <div>
 	<map name="map0">

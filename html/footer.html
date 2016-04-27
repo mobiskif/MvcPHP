@@ -1,36 +1,31 @@
+<nav>
+	<?php echo toUl($this->arg->templates, "template"); ?>
+</nav>
 </main>
 <footer>
-		<script src="https://apis.google.com/js/platform.js" async defer></script>
-		<script src="js/ajax.js" async defer></script>
-	<section>
-			<hgroup>
-				<h1>Выбрать партнера</h1>
-			</hgroup>
-			<select id="partner" onchange="renderButton()">
-				<?php echo toOptions($this->arg->partners); ?>
-			</select>
-			<?php echo toPartners($this->arg->partners); ?>
-			<div id="placeholder"></div>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="js/ajax.js" async defer></script>
+	<section class="radius">
+		<hgroup>
+			<h2>Выбрать пару</h2>
+		</hgroup>
+		<select id="partner" onchange="renderButton()">
+			<?php echo toOptions($this->arg->partners); ?>=
+		</select>
+		<?php echo toPartners($this->arg->partners); ?>
+		<div id="placeholder"></div>
 	</section>
-	  
-<section><h2>Apache module</h2>
-
-   <p class="simpara">
-    When <acronym title="PHP: Hypertext Preprocessor">PHP</acronym> is used as an Apache module it inherits Apache&#039;s user
-    permissions (typically those of the &quot;nobody&quot; user). This has several
-    impacts on security and authorization. For example, if you are using
-    <acronym title="PHP: Hypertext Preprocessor">PHP</acronym> to access a database, unless that database has built-in access
-    control, you will have to make the database accessible to the
-    &quot;nobody&quot; user. This means a malicious script could access and modify
-    the database, even without a username and password. It&#039;s entirely
-    possible that a web spider could stumble across a database
-    administrator&#039;s web page, and drop all of your databases.
-   </p>
-   </section>
-</footer>
-		<nav class="inline">
-			<?php echo toUl($this->arg->templates, "template"); ?>
-			<a href="?action=Save">Save</a>
+	<section>
+	<p>Произносите по-очереди фразы дважды, начиная с первой и, далее, по порядку.</p>
+		<hgroup <?php if (!isset($this->arg->oldlessons->value)) echo 'style="display:none"';?> >
+			<h4>Уже пройдено</h4>
+		</hgroup>
+		<navv>
+			<?php echo toUl($this->arg->oldlessons->value); ?>
 		</nav>
+	</section>
+	<p>Отметить текущий урок, как "<a href="?action=Save">Пройдено</a>"</p>
+</footer>
+
 </body>
 </html>

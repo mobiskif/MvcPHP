@@ -6,7 +6,7 @@
 <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
 <link href="html/default.css" rel="stylesheet" type="text/css" async />
 <link href="html/<?php echo $this->arg->template->value;?>.css" rel="stylesheet" type="text/css" async />
-<title><?php echo 'Заголовок'; ?></title>
+<title><?php echo 'Английский с носителем языка'; ?></title>
 </head>
 <body>
 	<header>
@@ -17,17 +17,9 @@
 	<main>
 		<section>
 			<hgroup>
-				<h1>Выбрать урок</h1>
+				<h2>Выбрать урок</h2s>
 			</hgroup>
-				<nav class="inline">
+				<nav>
 					<?php echo toUl($this->arg->lessons); ?>
 				</nav>
-			<section>
-				<hgroup <?php if (!isset($this->arg->oldlessons->value)) echo 'style="display:none"';?> >
-					<h2>Уже пройдено мной</h2>
-				</hgroup>
-				<nav class="inline">
-					<?php echo toUl($this->arg->oldlessons->value); ?>
-				</nav>
-			</section>
 		</section>

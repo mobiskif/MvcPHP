@@ -1,44 +1,55 @@
 <section>
-   <h1>Installed as an Apache module</h1>
+<h3><?php echo $this->arg->value; ?></h3> 
+<pre>
+I LIKE It                            МНЕ ЭТО НРАВИТСЯ,
+BECAUSE                              ПОТОМУ ЧТО
+It WORKS                             ОНО РАБОТАЕТ
 
-   <p class="simpara">
-    When <acronym title="PHP: Hypertext Preprocessor">PHP</acronym> is used as an Apache module it inherits Apache&#039;s user
-    permissions (typically those of the &quot;nobody&quot; user). This has several
-    impacts on security and authorization. For example, if you are using
-    <acronym title="PHP: Hypertext Preprocessor">PHP</acronym> to access a database, unless that database has built-in access
-    control, you will have to make the database accessible to the
-    &quot;nobody&quot; user. This means a malicious script could access and modify
-    the database, even without a username and password. It&#039;s entirely
-    possible that a web spider could stumble across a database
-    administrator&#039;s web page, and drop all of your databases. You can
-    protect against this with Apache authorization, or you can design
-    your own access model using LDAP, <var class="filename">.htaccess</var> files, etc. and include
-    that code as part of your <acronym title="PHP: Hypertext Preprocessor">PHP</acronym> scripts.
-   </p>
-   <p class="simpara">
-    Often, once security is established to the point where the <acronym title="PHP: Hypertext Preprocessor">PHP</acronym> user
-    (in this case, the apache user) has very little risk attached to it,
-    it is discovered that <acronym title="PHP: Hypertext Preprocessor">PHP</acronym> is now prevented from writing any files
-    to user directories. Or perhaps it has been prevented from accessing
-    or changing databases. It has equally been secured from writing
-    good and bad files, or entering good and bad database transactions.
-   </p>
-   <p class="simpara">
-    A frequent security mistake made at this point is to allow apache
-    root permissions, or to escalate apache&#039;s abilities in some other
-    way.
-   </p>
-   <p class="simpara">
-    Escalating the Apache user&#039;s permissions to root is extremely
-    dangerous and may compromise the entire system, so sudo&#039;ing,
-    chroot&#039;ing, or otherwise running as root should not be considered by
-    those who are not security professionals.
-   </p>
-   <p class="simpara">
-    There are some simpler solutions. By using
-    <a href="ini.core.php#ini.open-basedir" class="link">open_basedir</a> you can control and restrict what
-    directories are allowed to be used for <acronym title="PHP: Hypertext Preprocessor">PHP</acronym>. You can also set up
-    apache-only areas, to restrict all web based activity to non-user,
-    or non-system, files.
-   </p>
-  </section>
+1. Like it?                          1. Нравится?
+2. Very much.                        2. Очень.
+3. Why?                              3. Почему?
+4. Because                           4. Потому что
+5. it works.                         5. оно работает.
+6. It works well.                    6. Оно работает хорошо.
+7. And                               7. И
+8. I like it very much.              8. Мне это очень нравится.
+
+
+It IS NOT VERY  COMFORTABLE          НЕ ОЧЕНЬ УДОБНО
+TO LIVE FAR FROM SCHOOL              ЖИТЬ ДАЛЕКО ОТ ШКОЛЫ
+
+1. DOES HE GO FAR?                   1. ОН ХОДИТ ДАЛЕКО?
+2. HE GOES VERY FAR.                 2. ОН ХОДИТ ОЧЕНЬ ДАЛЕКО.
+3. WHY?                              3. ПОЧЕМУ?
+4. HE LIVES FAR                      4. ОН ЖИВЕТ ДАЛЕКО
+5. FROM SCHOOL.                      5. ОТ ШКОЛЫ.
+6. THEREFORE                         6. ПОЭТОМУ
+7. HE GOES FAR.                      7. ОН ХОДИТ ДАЛЕКО.
+8. TO LIVE FAR FROM SCHOOL           8. ЖИТЬ ДАЛЕКО ОТ ШКОЛЫ
+9. IS NOT VERY COMFORTABLE.          9. НЕ ОЧЕНЬ УДОБНО.
+
+
+It IS TIME TO RUN TO SCHOOL.         ВРЕМЯ БЕЖАТЬ В ШКОЛУ.
+
+1. THE ALARM CLOCK RINGS.            1. БУДИЛЬНИК ЗВОНИТ.
+2. It IS TIME TO GET UP.             2. ВРЕМЯ ВСТАВАТЬ.
+3. I MUST GO TO SCHOOL.              3. Я ДОЛЖНА ИДТИ В ШКОЛУ.
+4. I JUMP OUT OF BED.                4. Я ВЫПРЫГИВАЮ ИЗ КРОВАТИ.
+5. TURN ON RADIO.                    5. ВКЛЮЧАЮ РАДИО.
+6. DO EXERCISES.                     6. ДЕЛАЮ УПРАЖНЕНИЯ.
+7. I HAVE DONE EXERCISES.            7. Я СДЕЛАЛА УПРАЖНЕНИЯ.
+8. WASH HANDS.                       8. МОЮ РУКИ.
+9. RUN.                              9. БЕГУ.
+
+
+It WAS JUST SO.                      ЭТО БЫЛО ПРОСТО ТАК.
+
+1. It WAS SO.                        1. ЭТО БЫЛО ТАК.
+2. HOW?                              2. КАК?
+3. SO.                               3. ТАК.
+4. JUST SO?                          4. ПРОСТО ТАК?
+5. YES.                              5. ДА.
+6. It WAS JUST SO.                   6. ЭТО БЫЛО ПРОСТО ТАК.
+
+</pre>
+</section>

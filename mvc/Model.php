@@ -9,9 +9,9 @@ class Model extends O {
 	);
 
 	public $partners = array (
-			"mobiskif@hotmail.com",
+			"mobiskif@gmail.com",
 			"taroeclipse@gmail.com",
-			"mobiskif@gmail.com" 
+			"mobiskif@hotmail.com"
 	);
 
 	public $templates = array (

@@ -1,38 +1,56 @@
-<section>
-   <h1>Filesystem Security</h1>
+<h3><?php echo $this->arg->value; ?></h3> 
+<pre>
+SHE HAS BEAUTIFUL EYES               У НЕЕ КРАСИВЫЕ ГЛАЗА
+AND HAIR.                            И ВОЛОСЫ.
 
-   <p class="simpara">
-    <acronym title="PHP: Hypertext Preprocessor">PHP</acronym> is subject to the security built into most server systems with
-    respect to permissions on a file and directory basis. This allows
-    you to control which files in the filesystem may be read. Care
-    should be taken with any files which are world readable to ensure
-    that they are safe for reading by all users who have access to that
-    filesystem.
-   </p>
- 
-   <p class="simpara">
-    Consider the following script, where a user indicates that they&#039;d
-    like to delete a file in their home directory. This assumes a
-    situation where a <acronym title="PHP: Hypertext Preprocessor">PHP</acronym> web interface is regularly used for file
-    management, so the Apache user is allowed to delete files in
-    the user home directories.
-   </p>
-      <p class="para">
-    <div class="example" id="example-373">
-     <p><strong>Example #1 Poor variable checking leads to....</strong></p>
-     <div class="example-contents">
-<div class="phpcode"><code><span style="color: #000000">
-<span style="color: #0000BB">&lt;?php<br /></span><span style="color: #FF8000">//&nbsp;remove&nbsp;a&nbsp;file&nbsp;from&nbsp;the&nbsp;user's&nbsp;home&nbsp;directory<br /></span><span style="color: #0000BB">$username&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #DD0000">'user_submitted_name'</span><span style="color: #007700">];<br /></span><span style="color: #0000BB">$userfile&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #DD0000">'user_submitted_filename'</span><span style="color: #007700">];<br /></span><span style="color: #0000BB">$homedir&nbsp;&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"/home/</span><span style="color: #0000BB">$username</span><span style="color: #DD0000">"</span><span style="color: #007700">;<br /><br /></span><span style="color: #0000BB">unlink</span><span style="color: #007700">(</span><span style="color: #DD0000">"</span><span style="color: #0000BB">$homedir</span><span style="color: #DD0000">/</span><span style="color: #0000BB">$userfile</span><span style="color: #DD0000">"</span><span style="color: #007700">);<br /><br />echo&nbsp;</span><span style="color: #DD0000">"The&nbsp;file&nbsp;has&nbsp;been&nbsp;deleted!"</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">?&gt;</span>
-</span>
-</code></div>
-     </div>
+1. HER EYES ARE ROUND.               1. ЕЕ ГЛАЗА - КРУГЛЫЕ.
+2. THEY ARE BLACK.                   2. ОНИ - ЧЕРНЫЕ.
+3. THEY  ARE BEAUTIFUL.              3. ОНИ - КРАСИВЫЕ.
+4. VERY  BEAUTIFUL EYES.             4. ОЧЕНЬ КРАСИВЫЕ ГЛАЗА.
+5. AND HAIR, TOO.                    5. И ВОЛОСЫ ТОЖЕ.
+6. HER HAIR IS LONG.                 6. ЕЕ ВОЛОСЫ - ДЛИННЫЕ.
+7. It IS BLACK AND BEAUTIFUL.        7. ОНИ - ЧЕРНЫЕ И КРАСИВЫЕ.
 
-    </div>
-   Since the username and the filename are postable from a user form, 
-   they can submit a username and a filename belonging to someone else, 
-   and delete it even if they&#039;re not supposed to be allowed to do so.
-   In this case, you&#039;d want to use some other form of authentication.
-   Consider what could happen if the variables submitted were
-   &quot;../etc/&quot; and &quot;passwd&quot;. The code would then effectively read   
-   </p>
-  </section>
+
+THE NOSE AND HANDS OF MARY           НОС И РУКИ МЭРИ -
+ARE SMALL                            МАЛЕНЬКИЕ
+
+1. Her nose is short.                1. Её нос - короткий.
+2. Thin and red lips.                2. Тонкие и красные губы.
+3. Not tall.                         3. Не высокая.
+4. Small hands.                      4. Маленькие руки.
+5. A nice girl.                      5. Хорошая девочка.
+6. What is her name?                 6. Как её имя?
+7. Mary.                             7. Мэри.
+8. Her name is Mary.                 8. Её имя - Мэри.
+
+
+THERE IS a DESK                      ИМЕЕТСЯ ПАРТА
+AND                                  И
+THERE IS a CHAIR                     ИМЕЕТСЯ СТУЛ
+
+1. This is a desk.                   1. Это - парта.
+2. What is on the desk?              2. Что на парте?
+3. A lamp in on the desk.            3. Лампа на парте.
+4. A book, a copy-book               4. Книга, тетрадь
+   and a pen, too.                      и ручка тоже.
+5. And a pencil-box.                 5. И пенал.
+6. A bag is on the chair.            6. Сумка на стуле.
+7. Look!                             7. Смотрите!
+8. Flowers and books are             8. Цветы и книги -
+   on the shelf.                        на полке.
+
+
+YOU MUST STUDY a LOT                 ВЫ ДОЛЖНЫ УЧИТЬСЯ МНОГО
+
+1. To read                           1. Читать
+   and                                  и
+2. to write                          2. писать
+3. is not easy.                      3. нелегко.
+4. It is difficult.                  4. Это трудно.
+5. You must study                    5. Вы должны учиться
+6. a lot.                            6. много.
+7. Quite a lot.                      7. Довольно много.
+
+
+</pre>
