@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59840ecf-df53-46cf-abdf-818a0f78914b" name="Default" comment="03/03/2019">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/footer.html" afterDir="false" />
-    </list>
+    <list default="true" id="59840ecf-df53-46cf-abdf-818a0f78914b" name="Default" comment="03/03/2019" />
     <ignored path="MvcPHP.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -78,34 +73,13 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MvcPHP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="public_html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MvcPHP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="public_html" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MvcPHP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="public_html" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Загрузки/WebRTC.html" />
+    <property name="last_opened_file_path" value="$USER_HOME$/www/mysite.ru/public_html" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -229,6 +203,14 @@
       <option name="presentableId" value="Default" />
       <updated>1458064623946</updated>
     </task>
+    <task id="LOCAL-00001" summary="03/03/2019">
+      <created>1551619110757</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1551619110757</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -271,7 +253,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" visible="true" weight="0.39905548" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293979" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32932165" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="8" />
       <window_info anchor="bottom" id="REST Client" order="9" weight="0.35419127" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3293979" />
