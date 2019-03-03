@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/MvcPHP.iml" filepath="$PROJECT_DIR$/.idea/MvcPHP.iml" />
+      <module fileurl="file://$USER_HOME$/www/mysite.ru/public_html/public_html.iml" filepath="$USER_HOME$/www/mysite.ru/public_html/public_html.iml" />
     </modules>
   </component>
 </project>
