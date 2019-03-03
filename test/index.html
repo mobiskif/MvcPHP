@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+    <link href="default.css" rel="stylesheet" type="text/css" async="">
+    <link href="templateLight.css" rel="stylesheet" type="text/css" async="">
+    <title>WebRTC</title>
+    <style>
+            .videoContainer {
+                position: relative;
+                width: 200px;
+                height: 150px;
+            }
+            .videoContainer video {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            .volume_bar {
+                position: absolute;
+                width: 5px;
+                height: 0px;
+                right: 0px;
+                bottom: 0px;
+                background-color: #12acef;
+            }
+        </style>
+</head>
+<body>
+<header>
+    <hgroup>
+        <h1><a href=".">Учим английский с носителем языка</a></h1>
+    </hgroup>
+</header>
+<main>
+    <section>
+        <hgroup>
+            <h2>Выбрать урок</h2>
+        </hgroup>
+        <nav>
+            <a href=".">1</a> <a href=".">2</a>
+        </nav>
+    </section>
+    <section>
+        <p>Выберите урок -&gt; Выберите партнера -&gt; Подключитесь и общайтесь! Произносите фразы урока дважды, по-очереди.</p>
+        <p>Неформальное общение в процессе урока даст вам уникальный опыт и знакомства.</p>
+        <p><img src="img/dialog.jpg" style="width:100%; max-width:600px; display:none"></p>
+
+        <button id="screenShareButton"></button>
+        <p id="subTitle"></p>
+        <form id="createRoom">
+            <input id="sessionInput"/>
+            <button type="submit">Create it!</button>
+        </form>
+        <div class="videoContainer">
+            <video id="localVideo" style="height: 150px;" oncontextmenu="return false;"></video>
+            <div id="localVolume" class="volume_bar"></div>
+        </div>
+        <div id="remotes"></div>
+    </section>
+
+
+
+    <nav>
+        <a href="https://mysite.ru/test/">1</a> <a href="https://mysite.ru/">2</a>
+    </nav>
+</main>
+<footer>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="js/ajax.js" async defer></script>
+    <section class="radius">
+        <hgroup>
+            <h2>Выбрать пару</h2>
+        </hgroup>
+        <select id="partner" onchange="renderButton()">
+            <option>Пункт 1</option>
+            <option>Пункт 2</option>
+        </select>
+        <div id="placeholder"></div>
+    </section>
+    <section>
+        <p>Произносите по-очереди фразы дважды, начиная с первой и, далее, по порядку.</p>
+        <hgroup>
+            <h4>Уже пройдено</h4>
+        </hgroup>
+        <nav>
+            <a href="https://mysite.ru/test/">1</a> <a href="https://mysite.ru/">2</a>
+        </nav>
+    </section>
+    <p>Отметить текущий урок, как "<a href="https://mysite.ru/test/?action=Save">Пройдено</a>"</p>
+    <div>
+        <map name="map0">
+            <area shape="circle" alt="" title="" coords="277,53,24" href="https://mysite.ru/test/?action=action-V" target="">
+            <area shape="circle" alt="" title="" coords="191,162,27" href="https://mysite.ru/test/?action=action-S" target="">
+            <area shape="circle" alt="" title="" coords="276,134,23" href="https://mysite.ru/test/?action=action-C" target="">
+            <area shape="circle" alt="" title="" coords="279,208,21" href="https://mysite.ru/test/?action=action-M" target="">
+            <area shape="circle" alt="" title="" coords="144,300,20" href="https://mysite.ru/test/?action=action-S" target="">
+            <area shape="circle" alt="" title="" coords="333,292,25" href="https://mysite.ru/test/?action=action-C" target="">
+            <area shape="circle" alt="" title="" coords="333,366,23" href="https://mysite.ru/test/?action=action-M" target="">
+            <area shape="circle" alt="" title="" coords="339,453,23" href="https://mysite.ru/test/" target="_blank">
+        </map>
+        <img src="https://mysite.ru/test/img/1.png" border="0" usemap="#map0" style="width:100%; max-width:600px;">
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="../out/simplewebrtc-with-adapter.bundle.js"></script>
+<script src="js/rtc.js" async defer></script>
+
+</body>
+</html>

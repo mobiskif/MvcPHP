@@ -1,0 +1,111 @@
+@CHARSET "UTF-8";
+html {
+	width: 95%;
+	margin: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+body {
+	width: 80%;
+	margin: auto;
+}
+main {
+	width: 62%;
+	float: left;
+}
+footer {
+	width: 32%;
+	float: right;
+}
+.radius {
+	border: 1px solid #ffffaa;
+	padding: 1em;
+	border-radius: 1em;
+	padding-top:0;
+}
+nav {
+	bborder: 1px solid #ffffaa;
+	padding: 1em;
+	background-color:#ffffaa;
+	border-radius: 1em;
+	clear:both;
+}
+.inlinne {
+	clear: both;
+}
+#O td {
+	border: 1px dotted orange;
+}
+nav li {
+	display: inline;
+	margin-right: .5em;
+}
+
+nav ul {
+	padding:0; margin:0; border: 0px solid;
+}
+h1 a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1 a:HOVER {
+	text-decoration: underline;
+}
+
+/*
+html {
+	background-image: url(../img/globe.gif);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment:fixed;
+}
+
+body {
+	background-color: transparent;
+	padding-left: .5em;
+	padding-right: .5em;
+	width: 68%;
+	margin: auto;
+	font-size: large;
+	font-family: Georgia, "Tiimes New Roman", Times, serif;
+	line-height: normal;
+}
+
+
+p {
+	text-indent: .68em;
+}
+
+h1, h2 {
+	font-weight: normal;
+	font-family: "Tiimes New Roman"
+}
+
+
+header h1 {
+	font-weight: bold;
+}
+
+.hover:HOVER {
+	background-color: #fff;
+}
+/**/
+
+
+@media screen and (max-width: 750px) {
+	body {
+		width: 97%;
+		margin: 0;
+	}
+	main {
+		width: 100%;
+		float: none;
+	}
+	footer {
+		width: 100%;
+		float: none;
+	}
+	.radius {margin-top:1em}
+}
+
